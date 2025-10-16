@@ -1,0 +1,23 @@
+{
+  "name": "base-batch-sender",
+  "version": "1.0.0",
+  "description": "Gas-efficient batch transfer dApp on Base Network",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network base_sepolia",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network base_mainnet"
+  },
+  "keywords": ["base", "ethereum", "batch", "transfer", "gas-efficient"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "dotenv": "^16.3.0"
+  }
+}
